@@ -11,7 +11,7 @@ app.get("/api/test", async (req, res) => {
   console.log("this is a test");
 
   if (!req.query.url) {
-    res.status(400).json({ error: "url is required" });
+    res.status(400).json({ error: "test" });
   } else {
     const results = await pa11y(req.query.url);
     res.status(200).json(results);

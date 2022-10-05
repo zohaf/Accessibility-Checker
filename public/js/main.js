@@ -84,5 +84,3 @@ function escapeHTML(html) {
 }
 
 document.querySelector("#form").addEventListener("submit", testAccessibility);
-document.querySelector("#clearResults").addEventListener("click", clearResults);
-document.querySelector("#csvBtn").addEventListener("click", csvIssues);

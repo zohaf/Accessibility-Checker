@@ -6,8 +6,9 @@ const PORT = process.env.PORT || 4000;
 
 app.use(express.static("public"));
 
-app.get("/", async (req, res) => {
+app.get("/api/test", async (req, res) => {
   res.sendFile("index.html", { root: path.join(__dirname, "public") });
+  console.log("this is a test");
 
   if (!req.query.url) {
     res.status(400).json({ error: "url is required" });
